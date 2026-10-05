@@ -1,0 +1,36 @@
+{
+  "kind": "tuned_ensemble",
+  "seed": 42,
+  "metric": "roc_auc",
+  "trials": 16,
+  "source_sha256": "43fb693e0248c9210f496bb4e592ab35756c835eb2db93d259efdc1b76200d08",
+  "datasets": {
+    "diabetes": {
+      "val_auc": 0.8528,
+      "test_auc": 0.8001,
+      "ensemble": true,
+      "best_single_kind": "logreg",
+      "members": [
+        {
+          "kind": "logreg",
+          "params": {
+            "C": 1.0
+          }
+        },
+        {
+          "kind": "logreg",
+          "params": {
+            "C": 0.1
+          }
+        },
+        {
+          "kind": "et",
+          "params": {}
+        }
+      ],
+      "artifact_bytes": 1085047,
+      "artifact_sha256": "50b5ecc4afc5e291dc45c7ce504a40fe2d5f735d3c86157a6c10a95407a9691f",
+      "search_s": 14.8
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "tuned_ensemble",
+  "seed": 42,
+  "metric": "roc_auc",
+  "trials": 16,
+  "source_sha256": "43fb693e0248c9210f496bb4e592ab35756c835eb2db93d259efdc1b76200d08",
+  "datasets": {
+    "adult": {
+      "val_auc": 0.9296,
+      "test_auc": 0.929,
+      "ensemble": true,
+      "best_single_kind": "xgb",
+      "members": [
+        {
+          "kind": "xgb",
+          "params": {
+            "learning_rate": 0.057981034777209596,
+            "n_estimators": 584,
+            "max_depth": 4
+          }
+        },
+        {
+          "kind": "xgb",
+          "params": {
+            "learning_rate": 0.09491392939374098,
+            "n_estimators": 320,
+            "max_depth": 4
+          }
+        },
+        {
+          "kind": "lgbm",
+          "params": {
+            "learning_rate": 0.035153719464910554,
+            "n_estimators": 437,
+            "num_leaves": 32
+          }
+        }
+      ],
+      "artifact_bytes": 1017649,
+      "artifact_sha256": "c57ccbdbc6b9854c1118eaeccebfbe8d8f90444a7a678f3272d2fbcf81c19076",
+      "search_s": 206.2
+    }
+  }
+}

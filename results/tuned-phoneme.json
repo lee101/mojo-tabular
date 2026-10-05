@@ -1,0 +1,24 @@
+{
+  "kind": "tuned_ensemble",
+  "seed": 42,
+  "metric": "roc_auc",
+  "trials": 16,
+  "source_sha256": "43fb693e0248c9210f496bb4e592ab35756c835eb2db93d259efdc1b76200d08",
+  "datasets": {
+    "phoneme": {
+      "val_auc": 0.9523,
+      "test_auc": 0.9546,
+      "ensemble": false,
+      "best_single_kind": "et",
+      "members": [
+        {
+          "kind": "et",
+          "params": {}
+        }
+      ],
+      "artifact_bytes": 5496319,
+      "artifact_sha256": "e37ac3db2ba7bd9839833d8e0ac8a0a537467ddcf58b098d6550af47485fd683",
+      "search_s": 39.4
+    }
+  }
+}

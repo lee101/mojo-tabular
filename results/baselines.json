@@ -1,0 +1,169 @@
+{
+  "kind": "real_data_baselines",
+  "seed": 42,
+  "split": "60/20/20 stratified",
+  "metric": "roc_auc",
+  "source_sha256": "28a06cd9c7078da72f3dd951c8b05845a026a045071d015dcad5efb234c7bdd3",
+  "datasets": {
+    "adult": {
+      "rows": 48842,
+      "sha256": "cacdc745358d0b11edfb5625cc041a0cdb2c12550a55e52593abc32c64441d59",
+      "results": {
+        "prior": {
+          "val_auc": 0.5,
+          "test_auc": 0.5,
+          "fit_s": 0.01
+        },
+        "logreg": {
+          "val_auc": 0.907,
+          "test_auc": 0.9066,
+          "fit_s": 1.49
+        },
+        "rf": {
+          "val_auc": 0.9002,
+          "test_auc": 0.9034,
+          "fit_s": 3.16
+        },
+        "hgb": {
+          "val_auc": 0.9283,
+          "test_auc": 0.9272,
+          "fit_s": 2.24
+        },
+        "mlp": {
+          "val_auc": 0.9113,
+          "test_auc": 0.9083,
+          "fit_s": 8.27
+        }
+      },
+      "selected_by_val": "hgb"
+    },
+    "credit-g": {
+      "rows": 1000,
+      "sha256": "48b757fe48bd0b5c5ce2dbc84fabe20554bea43ce5b7157c6b5dbe8089107c0e",
+      "results": {
+        "prior": {
+          "val_auc": 0.5,
+          "test_auc": 0.5,
+          "fit_s": 0.0
+        },
+        "logreg": {
+          "val_auc": 0.8221,
+          "test_auc": 0.7942,
+          "fit_s": 0.09
+        },
+        "rf": {
+          "val_auc": 0.7961,
+          "test_auc": 0.7958,
+          "fit_s": 0.32
+        },
+        "hgb": {
+          "val_auc": 0.7806,
+          "test_auc": 0.7423,
+          "fit_s": 0.74
+        },
+        "mlp": {
+          "val_auc": 0.7986,
+          "test_auc": 0.7777,
+          "fit_s": 0.2
+        }
+      },
+      "selected_by_val": "logreg"
+    },
+    "bank-marketing": {
+      "rows": 45211,
+      "sha256": "2afe41dfb060eb46aeecb5c105085b1c9d5b0c522bba9185063d3a879d6fc5ba",
+      "results": {
+        "prior": {
+          "val_auc": 0.5,
+          "test_auc": 0.5,
+          "fit_s": 0.01
+        },
+        "logreg": {
+          "val_auc": 0.9047,
+          "test_auc": 0.9101,
+          "fit_s": 0.77
+        },
+        "rf": {
+          "val_auc": 0.9268,
+          "test_auc": 0.9267,
+          "fit_s": 2.71
+        },
+        "hgb": {
+          "val_auc": 0.9338,
+          "test_auc": 0.9375,
+          "fit_s": 1.52
+        },
+        "mlp": {
+          "val_auc": 0.9253,
+          "test_auc": 0.929,
+          "fit_s": 7.08
+        }
+      },
+      "selected_by_val": "hgb"
+    },
+    "phoneme": {
+      "rows": 5404,
+      "sha256": "986b259a8a108905122b32640c6241f2616fd3078c789c0e606930ebb48a5e40",
+      "results": {
+        "prior": {
+          "val_auc": 0.5,
+          "test_auc": 0.5,
+          "fit_s": 0.0
+        },
+        "logreg": {
+          "val_auc": 0.8013,
+          "test_auc": 0.8095,
+          "fit_s": 0.02
+        },
+        "rf": {
+          "val_auc": 0.9497,
+          "test_auc": 0.9554,
+          "fit_s": 0.51
+        },
+        "hgb": {
+          "val_auc": 0.9422,
+          "test_auc": 0.9489,
+          "fit_s": 0.71
+        },
+        "mlp": {
+          "val_auc": 0.8776,
+          "test_auc": 0.888,
+          "fit_s": 0.59
+        }
+      },
+      "selected_by_val": "rf"
+    },
+    "diabetes": {
+      "rows": 768,
+      "sha256": "4790da1f2df7137251f2076f8702565aa69046c26452728ed8f07cf44d466d9b",
+      "results": {
+        "prior": {
+          "val_auc": 0.5,
+          "test_auc": 0.5,
+          "fit_s": 0.0
+        },
+        "logreg": {
+          "val_auc": 0.8463,
+          "test_auc": 0.8031,
+          "fit_s": 0.05
+        },
+        "rf": {
+          "val_auc": 0.8084,
+          "test_auc": 0.7657,
+          "fit_s": 0.27
+        },
+        "hgb": {
+          "val_auc": 0.8126,
+          "test_auc": 0.7334,
+          "fit_s": 0.39
+        },
+        "mlp": {
+          "val_auc": 0.7233,
+          "test_auc": 0.7571,
+          "fit_s": 0.08
+        }
+      },
+      "selected_by_val": "logreg"
+    }
+  }
+}

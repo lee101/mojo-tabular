@@ -1,0 +1,10 @@
+artifacts/
+artifacts-gb/
+__pycache__/
+*.pyc
+.env*
+*.pem
+*.key
+prompts/
+REVIEW.md
+cog/.cog/

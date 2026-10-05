@@ -1,0 +1,40 @@
+{
+  "kind": "tuned_ensemble",
+  "seed": 42,
+  "metric": "roc_auc",
+  "trials": 16,
+  "source_sha256": "43fb693e0248c9210f496bb4e592ab35756c835eb2db93d259efdc1b76200d08",
+  "datasets": {
+    "credit-g": {
+      "val_auc": 0.8325,
+      "test_auc": 0.7894,
+      "ensemble": true,
+      "best_single_kind": "logreg",
+      "members": [
+        {
+          "kind": "logreg",
+          "params": {
+            "C": 0.1
+          }
+        },
+        {
+          "kind": "logreg",
+          "params": {
+            "C": 1.0
+          }
+        },
+        {
+          "kind": "xgb",
+          "params": {
+            "learning_rate": 0.07046752877748709,
+            "n_estimators": 330,
+            "max_depth": 3
+          }
+        }
+      ],
+      "artifact_bytes": 75788,
+      "artifact_sha256": "64a01b461750a3bea41f4752977186dc5be4a0615d0c84b08b8e0b2751115e2f",
+      "search_s": 24.1
+    }
+  }
+}

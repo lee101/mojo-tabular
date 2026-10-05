@@ -1,0 +1,20 @@
+{
+  "name": "mojo-tabular",
+  "task": "Structured-data classification and regression",
+  "priority": 1,
+  "status": "scaffold",
+  "backend": "pytorch-first; mojo after parity tests",
+  "max_parameters": 50000000,
+  "device": "cpu",
+  "dataset": null,
+  "objective": null,
+  "hf_model": null,
+  "hf_revision": null,
+  "profiles": [
+    "tiny",
+    "fast",
+    "balanced",
+    "max",
+    "robust"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "tuned_ensemble",
+  "seed": 42,
+  "metric": "roc_auc",
+  "trials": 16,
+  "source_sha256": "43fb693e0248c9210f496bb4e592ab35756c835eb2db93d259efdc1b76200d08",
+  "datasets": {
+    "bank-marketing": {
+      "val_auc": 0.9357,
+      "test_auc": 0.9386,
+      "ensemble": true,
+      "best_single_kind": "hgb",
+      "members": [
+        {
+          "kind": "hgb",
+          "params": {
+            "learning_rate": 0.03850363389390532,
+            "max_iter": 350,
+            "max_leaf_nodes": 28,
+            "min_samples_leaf": 15,
+            "l2_regularization": 0.37623611419432557,
+            "max_features": 0.911380806635415
+          }
+        },
+        {
+          "kind": "hgb",
+          "params": {
+            "learning_rate": 0.03770843066456067,
+            "max_iter": 563,
+            "max_leaf_nodes": 33,
+            "min_samples_leaf": 17,
+            "l2_regularization": 0.1653252347575385,
+            "max_features": 0.5319086280520877
+          }
+        },
+        {
+          "kind": "lgbm",
+          "params": {
+            "learning_rate": 0.035153719464910554,
+            "n_estimators": 437,
+            "num_leaves": 32
+          }
+        }
+      ],
+      "artifact_bytes": 2062973,
+      "artifact_sha256": "5a31f5eb6b4c6fc1f44d72ae0f804554bc62e35cf1ac7a979525001890503c18",
+      "search_s": 129.5
+    }
+  }
+}

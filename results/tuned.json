@@ -1,0 +1,151 @@
+{
+  "kind": "tuned_ensemble",
+  "seed": 42,
+  "metric": "roc_auc",
+  "trials": 16,
+  "source_sha256": "cf0c3d1191b0d15d1425aacb6e663f7e06abf721c2f01756cd653b2857dc0dd5",
+  "datasets": {
+    "adult": {
+      "val_auc": 0.929,
+      "test_auc": 0.9282,
+      "ensemble": true,
+      "members": [
+        {
+          "kind": "hgb",
+          "params": {
+            "learning_rate": 0.03850363389390532,
+            "max_iter": 350,
+            "max_leaf_nodes": 28,
+            "min_samples_leaf": 15,
+            "l2_regularization": 0.37623611419432557,
+            "max_features": 0.911380806635415
+          }
+        },
+        {
+          "kind": "hgb",
+          "params": {
+            "learning_rate": 0.03770843066456067,
+            "max_iter": 563,
+            "max_leaf_nodes": 33,
+            "min_samples_leaf": 17,
+            "l2_regularization": 0.1653252347575385,
+            "max_features": 0.5319086280520877
+          }
+        },
+        {
+          "kind": "hgb",
+          "params": {
+            "learning_rate": 0.026519966160905902,
+            "max_iter": 441,
+            "max_leaf_nodes": 58,
+            "min_samples_leaf": 25,
+            "l2_regularization": 0.07554804756926672,
+            "max_features": 0.5947356795421428
+          }
+        }
+      ],
+      "artifact_bytes": 2639714,
+      "artifact_sha256": "a28557fc9992cefa1eaaf2308964baa93b1c7e78f266c1a349fd64cdb1b246a7",
+      "search_s": 154.7
+    },
+    "credit-g": {
+      "val_auc": 0.8294,
+      "test_auc": 0.7986,
+      "ensemble": false,
+      "members": [
+        {
+          "kind": "logreg",
+          "params": {
+            "C": 0.1
+          }
+        }
+      ],
+      "artifact_bytes": 3369,
+      "artifact_sha256": "240366785f1e95fa3749b741747be6d4bb258d5be362e03cc5dec768b10d0496",
+      "search_s": 20.6
+    },
+    "bank-marketing": {
+      "val_auc": 0.9354,
+      "test_auc": 0.9384,
+      "ensemble": true,
+      "members": [
+        {
+          "kind": "hgb",
+          "params": {
+            "learning_rate": 0.03850363389390532,
+            "max_iter": 350,
+            "max_leaf_nodes": 28,
+            "min_samples_leaf": 15,
+            "l2_regularization": 0.37623611419432557,
+            "max_features": 0.911380806635415
+          }
+        },
+        {
+          "kind": "hgb",
+          "params": {
+            "learning_rate": 0.03770843066456067,
+            "max_iter": 563,
+            "max_leaf_nodes": 33,
+            "min_samples_leaf": 17,
+            "l2_regularization": 0.1653252347575385,
+            "max_features": 0.5319086280520877
+          }
+        },
+        {
+          "kind": "hgb",
+          "params": {
+            "learning_rate": 0.026519966160905902,
+            "max_iter": 441,
+            "max_leaf_nodes": 58,
+            "min_samples_leaf": 25,
+            "l2_regularization": 0.07554804756926672,
+            "max_features": 0.5947356795421428
+          }
+        }
+      ],
+      "artifact_bytes": 2670481,
+      "artifact_sha256": "ec72f430d51f216a15d3a611e6ff1ed279ecc022759160354cb821a6077f29ea",
+      "search_s": 101.4
+    },
+    "phoneme": {
+      "val_auc": 0.9523,
+      "test_auc": 0.9546,
+      "ensemble": false,
+      "members": [
+        {
+          "kind": "et",
+          "params": {}
+        }
+      ],
+      "artifact_bytes": 5496319,
+      "artifact_sha256": "e37ac3db2ba7bd9839833d8e0ac8a0a537467ddcf58b098d6550af47485fd683",
+      "search_s": 35.2
+    },
+    "diabetes": {
+      "val_auc": 0.8528,
+      "test_auc": 0.8001,
+      "ensemble": true,
+      "members": [
+        {
+          "kind": "logreg",
+          "params": {
+            "C": 1.0
+          }
+        },
+        {
+          "kind": "logreg",
+          "params": {
+            "C": 0.1
+          }
+        },
+        {
+          "kind": "et",
+          "params": {}
+        }
+      ],
+      "artifact_bytes": 1085047,
+      "artifact_sha256": "50b5ecc4afc5e291dc45c7ce504a40fe2d5f735d3c86157a6c10a95407a9691f",
+      "search_s": 16.5
+    }
+  }
+}
