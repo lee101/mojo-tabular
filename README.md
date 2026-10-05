@@ -46,7 +46,8 @@ docker run --rm -p 5000:5000 --memory 512m ghcr.io/lee101/mojo-tabular:latest   
 
 `POST /predictions {"input": {"dataset": "adult", "rows": "[{...}]"}}` returns a JSON list of probabilities
 (max 1000 rows). Do not use the default `cog build` image: its apt layer alone is 1.78 GB (2.33 GB total).
-Links: GitHub `lee101/mojo-tabular`, Hugging Face `lee101/mojo-tabular`.
+Links: [GitHub](https://github.com/lee101/mojo-tabular), [Hugging Face](https://huggingface.co/lee101/mojo-tabular).
+Status: no registry image is published yet. The GHCR push needs a token with `write:packages`, and app.nz's remote builder currently runs in simulated mode (`APPNZ_BUILDER` unset), so the one-click badge will not resolve until an image is pushed. Build locally with the command above.
 
 ## Limitations
 
